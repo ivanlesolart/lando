@@ -1,0 +1,11 @@
+name: drupal-test
+recipe: drupal9
+config:
+  php: '7.4'
+  composer_version: '2.0.7'
+  via: nginx
+  webroot: web/
+  database: mariadb:10.3
+tooling:
+  drush:
+    cmd: vendor/drush/drush/drush
